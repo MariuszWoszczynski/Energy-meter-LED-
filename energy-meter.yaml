@@ -1,3 +1,8 @@
+dashboard_import:
+  package_import_url: github://MariuszWoszczynski/WMBUS-reader/energy-meter-LED.yaml@main
+  import_full_config: true
+
+
 # Home Assistant Glow
 #
 # Read your electricity meter by means of the pulse LED on your
@@ -13,12 +18,12 @@ substitutions:
   status_led: GPIO15
   led_pin_red: GPIO17
 
-#dashboard_import:
-#  package_import_url: github://klaasnicolaas/home-assistant-glow/home_assistant_glow.yaml@main
-
 esphome:
   name: '${device_name}'
-
+  project:
+    name: esphome.energy_meter
+    version: "1.0"
+    
 esp32:
   board: lolin_s2_mini
 

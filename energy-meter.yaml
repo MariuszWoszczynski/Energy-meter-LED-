@@ -1,5 +1,5 @@
 dashboard_import:
-  package_import_url: github://MariuszWoszczynski/WMBUS-reader/energy-meter-LED.yaml@main
+  package_import_url: github://MariuszWoszczynski/Energy-meter-LED/energy-meter-LED.yaml@main
   import_full_config: true
 
 
